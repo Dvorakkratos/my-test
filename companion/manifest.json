@@ -2,15 +2,15 @@
 	"id": "test",
 	"name": "test",
 	"shortname": "te",
-	"description": "A short one line description of your module",
-	"version": "0.0.0",
+	"description": "test description",
+	"version": "0.0.1",
 	"license": "MIT",
 	"repository": "git+https://github.com/Dvorakkratos/my-test",
 	"bugs": "",
 	"maintainers": [
 		{
-			"name": "Your name",
-			"email": "Your email"
+			"name": "db",
+			"email": "db@gmail.com"
 		}
 	],
 	"runtime": {
@@ -20,7 +20,7 @@
 		"entrypoint": "../main.js"
 	},
 	"legacyIds": [],
-	"manufacturer": "Your company",
-	"products": ["Your product"],
+	"manufacturer": "db",
+	"products": ["lksjdhflksjhdf"],
 	"keywords": []
 }
