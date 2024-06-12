@@ -34,9 +34,17 @@ module.exports = async function(self) {
 			type: 'boolean',
 			label: 'test label',
 
+			defaultStyle: {
+				bgcolor: combineRgb(100, 0, 255),
+				color: combineRgb(0, 0, 0),
+				text: "TesT",
+				size: "auto",
+				show_topbar: false,
+			},
+
 			options: [
 				{
-					id: 'variable1',
+					id: 'value',
 					type: 'number',
 					label: 'myVar',
 					default: 9,
@@ -45,8 +53,13 @@ module.exports = async function(self) {
 				},
 			],
 			callback: (feedback) => {
-				feedback.option.variable1 = 10;
-			}
+				if (feedback.options.value % 2) {
+					self.setVariableValues([{ variableId: 'variable1' }]);
+					return true;
+				} else {
+					return false;
+				}
+			},
 		},
 	})
 }
